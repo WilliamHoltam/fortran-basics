@@ -1,0 +1,14 @@
+!  This program converts fahrenheit to celcius
+
+PROGRAM F_to_C
+
+  IMPLICIT none
+  REAL :: F, C
+
+  WRITE(6,*) 'Please enter the temperature in fahrenheit'
+  WRITE(6,*) 'to be converted to celcius' 
+  READ(5,*) F
+  C = (5/9)×(F-32)
+  WRITE(6,*) F,' fahrenheit = ', C,' celcius'
+
+END PROGRAM F_to_C

@@ -1,0 +1,32 @@
+MODULE fractions
+
+  ! define the data type in the module
+  TYPE frac
+    INTEGER :: denominator, numerator
+  END TYPE frac
+END MODULE
+
+!----------------------------------------------
+
+Program fract
+
+  USE fractions
+  IMPLICIT NONE
+  
+  INTEGER :: f1, b
+  
+  Type (frac) :: f1
+    
+    f1%denominator=6
+    f1%numerator=12
+    
+    WRITE(6,*) "frac", f1
+    function GCD(f1%numerator,f1%denominator)
+    while (b/=0)
+       (t=b)
+       (b = a mod b)
+       (a=t)
+    return a
+    WRITE(6,*) "The fraction simplified is", a
+    
+END program fract
